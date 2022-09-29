@@ -1,0 +1,398 @@
+/* ---------------------------------- RESET --------------------------------- */
+
+/* ---------------------------------- FONTS --------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    background-image:linear-gradient(0deg, #912298 0%, #1d3b71 23%, #060606 70%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* --------------------------- ESTILOS UNIVERSALES -------------------------- */
+
+.fontwhite{
+    color: white;  
+}
+
+.textDecorationNone{
+    text-decoration: none;
+    margin: 1rem;
+    color: white;
+}
+
+.inicioBottom{
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.marginBottom{
+    margin-bottom: 0.4rem; 
+}
+/* --------------------------------- HEADER --------------------------------- */
+
+.header{
+    border-bottom: white solid 1px;
+}
+
+.favicon{
+    width: auto;
+    height: 40px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    background-image:linear-gradient(0deg, #912298 0%, #1d3b71 23%, #060606 70%);
+    align-items: center;
+}
+    
+.navEnlaces{
+    display: flex;
+}
+
+.navFavicon{
+    width: auto;
+    height: max-content;
+}
+
+
+
+/* --------------------------------- INICIO --------------------------------- */
+
+#inicio{
+    background: url(https://hub.unitec.edu/wp-content/uploads/2019/09/web-developer-790x500.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicioDiv{
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.inicioDiv h1{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.inicioDiv a{
+    text-align: center;
+}
+
+.inicioImg{
+    border-radius: 25%;
+}
+
+.inicioBottom{
+    background-image:linear-gradient(0deg, #912298 0%, #1d3b71 23%, #060606 70%);
+    padding: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+/* -------------------------------- SOBRE MI -------------------------------- */
+
+.sobreMi{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.sobreMiDiv{
+    width: 40%;
+    text-align: left;
+    padding: 2rem 3rem; 
+}
+
+.sobreMiEducacion{
+    width: 40%;
+    padding: 2rem 3rem;
+}
+
+.SobreMiH2{
+    margin: 1rem 0 0.5rem 0;
+}
+
+
+/* -------------- PROGRESS BAR ---------------- */
+
+.progress-bar {
+    border: 2px solid rgb(160, 159, 159);
+    border-radius: 14px;
+    margin-bottom: 0.2rem;
+} 
+
+.progress-bar > div {
+    color: white;
+    background: rgb(113, 162, 193);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 2px 10px;
+    border-radius: 10px;
+    -webkit-animation: progress-bar 2s;
+    -moz-animation: progress-bar 2s;
+} 
+
+@-webkit-keyframes progress-bar {   
+    0% { width: 0; }
+} 
+
+@-moz-keyframes progress-bar {
+    0% { width: 0; }
+}
+
+/* ------------------------------- TECNOLOGIAS ------------------------------ */
+
+.tecnologias{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.tecnologias div{
+    margin: 1rem 0;
+    box-shadow: 5px 9px 8px rgb(35, 108, 153);
+    background-color: rgb(160, 176, 186);
+    padding: 0.7rem;
+    border-radius: 0.8rem;
+}
+
+.tecnologias div a{
+    text-decoration: none;
+    padding: 0.7rem;
+}
+
+
+/* ------------------------------ MIS SERVICIOS ----------------------------- */
+
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem 1fr 1fr;
+    justify-items: center;
+    padding: 0 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.servicios h2{
+    grid-column: 1 / 4;
+}
+
+.servicios div{
+    display: grid;
+    grid-template-rows: 3rem 2rem 2fr;
+    justify-items: center;
+}
+
+.serviciosText{
+    padding: 1rem;
+    text-align: center;
+}
+
+/* -------------------------------- PROYECTOS ------------------------------- */
+
+.proyectos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem 1fr;
+    justify-items: center;
+    padding:  0 2rem;
+}
+
+.proyectos h2{
+    grid-column: 1 / 4;
+}
+
+.proyectos a{
+    text-decoration: none;
+}
+
+.proyectos div{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+.img{
+    width: 380px;
+    height: 200px;
+    border-radius: 1rem;
+    background-size: cover;
+}
+
+.proyectosText{
+    padding: 1rem;
+}
+
+/* -------------------------------- CONTACTO -------------------------------- */
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.contacto h2{
+    margin-bottom: 1.5rem;
+    }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 350px;
+    width: 300px;
+    border: rgb(174, 214, 240) solid 2px;
+    border-radius: 0.4rem;
+    padding: 1rem 2rem;
+    box-shadow: 5px 7px 5px 0px rgb(35, 108, 153);
+    background-color: rgb(160, 176, 186);
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #060606;   
+}
+
+.input{
+    width: 300px;
+    margin: 0.5rem 0;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    background-color: rgb(160, 176, 186);
+}
+
+::placeholder{
+    color:rgb(52, 52, 52);
+}
+
+.button{
+    width: 314px;
+    padding: 0.4rem;
+    margin: 0.5rem 0;
+    background-color: rgb(0, 84, 136);
+    border-radius: 0.4rem;
+}
+
+.button:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+
+footer{
+    border-top: white solid 1px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------------ MEDIA QUERIES ----------------------------- */
+
+/* ----------- TABLET ------------- */
+
+@media only screen and (max-width: 991px) {
+
+    /* ------------ SOBRE MI ------------- */
+
+    .sobreMiDiv{
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .sobreMiEducacion{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .sobreMiEducacionDiv{
+        width: 40%;
+        padding: 2rem;
+    }
+
+    /* ----------- PROYECTOS ------------- */
+
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyectos h2{
+        margin: 0 0 2rem 0;
+    }
+
+}
+
+/* --------------- MOVIL ---------------- */
+
+@media only screen and (max-width: 751px) {
+
+/* ----------------- HEADER ------------------ */
+
+    .nav{
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navEnlaces{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /*--------- TECNOLOGIAS -------------- */
+    .tecnologiasDiv{
+        margin: 0 2rem;
+    }
+
+
+/* ------------ MIS SERVICIOS ------------ */
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ------------------ CONTACTO --------- */
+    .form{
+        width: 300px;
+        align-items: center;
+    }
+
+
+}
